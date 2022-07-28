@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 75px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 50px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.container{
+    min-height: 34vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 75%;
+   border-radius: 12px;
+   padding: 10px 10px;
+   background-image: url('bg.jpg');
+   background-position:center;
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color:black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 75px;
+}
+
+.songItem{
+    height: 50px;
+    width: 450px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 14px 0;
+    justify-content:space-between;
+    align-items:center;
+    border-radius: 34px;
+}
+
+.songlist{
+    height: 10%;
+    width: 10%;
+}
+
+.songItem img{
+    width: 30px;
+    margin: 0px 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color:aqua;
+    }
+    .masterSongName {
+        display: flex;
+        flex: 30%;
+        margin: 4rem;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+    }
+    .songItem img {
+        width: 30px;
+    }
+  .timestamp {
+    margin: 0 15px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .songName{
+    height:fit-content;
+    width:fit-content;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .songItem {
+    height: 48px;
+    width: 285px;
+  } 
+
+  .timestamp i {
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .songInfo {
+    position:static;
+    justify-content: center;
+    padding: 5px;
+    margin: 3px;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+  }
+  .icons {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+}
