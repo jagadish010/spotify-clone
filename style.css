@@ -122,7 +122,11 @@ nav ul li{
     transition: opacity 0.4s ease-in;
 }
 
-@media only screen and (max-width: 1100px) {
+.songItemPlay:hover{
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1050px) {
     body {
       background-color:aqua;
     }
@@ -134,9 +138,15 @@ nav ul li{
         align-items:center;
         flex-direction: column;
     }
+
     .songItem img {
         width: 30px;
     }
+
+    .songItemPlay:hover {
+        font-size: 21px;
+    }
+    
   .timestamp {
     margin: 0 15px;
     font-size: 0.8rem;
